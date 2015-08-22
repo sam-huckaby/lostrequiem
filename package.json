@@ -1,0 +1,14 @@
+{
+  "name": "lost-requiem",
+  "version": "0.1.0",
+  "description": "Lost Requiem - text-based MMORPG",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Huckaby",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0"
+  }
+}

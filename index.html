@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='lostrequiem'>
 	<head>
 		<!-- Character Encoding -->
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
+
+		<base href="/" />
 		
 		<!-- Page Title -->
 		<title>Lost Requiem</title>
 		
-		<!-- JavaScript Libraries -->
+		<!-- Libraries CSS -->
+		<link href="styles/compiled/vendor/bootstrap.min.css" rel="stylesheet" />
+		<link href="styles/compiled/vendor/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="styles/compiled/vendor/font-awesome.css" rel="stylesheet" />
+
+		<!-- Custom CSS -->
+		<link href="styles/compiled/custom/custom.css" rel="stylesheet" />
+
+		<!-- Libraries JavaScript -->
 		<script type="text/javascript" src="libraries/angular.min.js"></script>
-		<!-- CSS Libraries -->
-		<link href="styles/bootstrap.min.css" rel="stylesheet" />
-		<link href="styles/bootstrap-theme.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="libraries/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="libraries/ui-bootstrap-tpls.min.js"></script>
+
+		<!-- Lost Requiem JavaScript-->
+		<script type="text/javascript" src="app/lostrequiem.js"></script>
+		<script type="text/javascript" src="app/components/components.config.js"></script>
+		<script type="text/javascript" src="app/components/lr-header.directive.js"></script>
+		
 	</head>
 	<body>
-
+		<lr-header></lr-header>
+		<ui-view></ui-view>
+		<lr-footer></lr-footer>
 	</body>
 </html>
