@@ -3,6 +3,7 @@ var app = angular.module("lostrequiem.components");
 app.directive('lrHeader', [function () {
 	return {
 		restrict: 'E',
-		templateUrl: 'templates/components/lr-header.template.html'
+		templateUrl: 'templates/components/lr-header.template.html',
+		controller: 'lr-header.controller'
 	};
 }]);

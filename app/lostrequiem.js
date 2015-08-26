@@ -1,7 +1,8 @@
 var app = angular.module("lostrequiem", [
 	'ui.router',
 	'ui.bootstrap',
-	'lostrequiem.components'
+	'lostrequiem.components',
+	'lostrequiem.resources'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
